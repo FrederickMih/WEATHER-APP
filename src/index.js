@@ -1,4 +1,1 @@
-import "./style.css";
-
-
-alert("hello world!");
+import './main.scss';
