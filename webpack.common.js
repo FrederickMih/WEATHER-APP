@@ -1,13 +1,7 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');// eslint-disable-line import/no-extraneous-dependencies
 
 module.exports = {
-  mode: 'development',
   entry: './src/index.js',
-  output: {
-    filename: 'bundle.[contenthash].js',
-    path: path.resolve(__dirname, 'dist'),
-  },
   module: {
     rules: [
       {
