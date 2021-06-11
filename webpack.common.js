@@ -16,6 +16,7 @@ module.exports = {
       },
       {
         test: /\.html$/i,
+        exclude: [/node_modules/, require.resolve('./src/template.html')],
         use: ['html-loader'],
       },
       {
