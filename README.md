@@ -1,7 +1,10 @@
 ## Weather App
 
 > This is a web app where you can see the weather of the city of your choice by typing its name on a search bar
+
+![screenshot](./src/assets/weatherscr1.png)
 ## Built With 
+
 
 - JavaScript, HTML5, Sass and Bootstrap
 
@@ -17,6 +20,7 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 - Get a browser like Chrome and Firefox in their most recent versions
+- 
 
 ### Install
 

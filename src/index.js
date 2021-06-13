@@ -35,7 +35,9 @@ document.getElementById('button-addon').onclick = () => {
   if (
     document.getElementById('flag-par') !== null
     && document.getElementById('flag-par') !== undefined
-  ) { document.getElementById('flag-par').remove(); }
+  ) {
+    document.getElementById('flag-par').remove();
+  }
   const cityTitle = document.querySelector('.card-title');
 
   const cityText = document.querySelector('.card-text-bottom');
