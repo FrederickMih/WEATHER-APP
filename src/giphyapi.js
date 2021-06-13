@@ -1,7 +1,8 @@
-const APIKEY = '359ae54fc81f961128eba924684fcf1e';
+// const APIKEY = 'dCj6E5d1AjAF6BzBeBzGTnCAIYBB8fq2';
 const img = document.querySelector('.card-img-top');
+
 const giphyImg = (weather) => fetch(
-  `https://api.giphy.com/v1/gifs/translate?api_key=${APIKEY}=${weather}`,
+  `https://api.giphy.com/v1/gifs/translate?api_key=dCj6E5d1AjAF6BzBeBzGTnCAIYBB8fq2&s=${weather}`,
   { mode: 'cors' },
 )
   .then((response) => response.json())

@@ -5,7 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack serve --config webpack.dev.js --open",
+    "start": "webpack --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js"
   },
   "repository": {
@@ -38,8 +38,11 @@
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.19.0",
     "webpack": "^5.38.1",
-    "webpack-cli": "^4.7.2",
+    "webpack-cli": "^4.7.0",
     "webpack-dev-server": "^3.11.2",
     "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
   }
 }
