@@ -25,7 +25,6 @@ document.getElementById('button-addon').onclick = () => {
   myLoader.style.display = 'block';
   displayError.style.display = 'none';
   cityName = document.querySelector('.form-control');
-  //   const APIKEY = '359ae54fc81f961128eba924684fcf1e';
   const link = `https://api.openweathermap.org/data/2.5/weather?q=${cityName.value}&appid=359ae54fc81f961128eba924684fcf1e`;
   const getWeatherInfo = async () => {
     const response = await fetch(link, { mode: 'cors' });
