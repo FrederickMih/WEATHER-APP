@@ -40,4 +40,33 @@ document.getElementById('button-addon').onclick = () => {
   const cityTitle = document.querySelector('.card-title');
 
   const cityText = document.querySelector('.card-text-bottom');
-  
+  getWeatherInfo()
+    .then((data) => {
+      myCard.appendChild(myCardBody);
+      cityTitle.innerHTML = `${data.name}, ${data.sys.country}`;
+      flag.src = `https://www.countryflags.io/${data.sys.country.toLowerCase()}/shiny/64.png`;
+      mainTemp = data.main.temp;
+      feelsLike = data.main.feels_like;
+      cityTextTop.innerHTML = `Temperature: ${(Number.parseInt(mainTemp, 10) - 273.15).toFixed(
+        2,
+      )} \u00B0C <br>`
+        + `Feels like: ${(Number.parseInt(feelsLike, 10) - 273.15).toFixed(
+          2,
+        )} \u00B0C`;
+
+      cityText.innerHTML = `Humidity: ${data.main.humidity} %`
+        + `<br> Wind speed: ${data.wind.speed} m/s`
+        + `<br> Weather condition: ${data.weather[0].description}`;
+      giphyImg(data.weather[0].description);
+      myLoader.style.display = 'none';
+      myCard.style.display = 'block';
+      myCardBody.style.display = 'block';
+    })
+    .catch(() => {
+      giphyImg('error');
+      myCard.style.display = 'block';
+      myLoader.style.display = 'none';
+      myCardBody.style.display = 'none';
+      displayError.style.display = 'block';
+    });
+};
