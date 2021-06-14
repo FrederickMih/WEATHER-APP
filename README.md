@@ -15,6 +15,7 @@ To get a local copy up and running follow these simple example steps.
 - `git clone git@github.com:FrederickMih/WEATHER-APP.git`
 - `cd weather-app`
 - `npm install`
+- `npm start`
 - open `dist/index.html` 
 
 ### Prerequisites

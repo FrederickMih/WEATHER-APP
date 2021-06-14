@@ -1,0 +1,109 @@
+.input-group > .form-control {
+  width: 20rem;
+}
+
+.input-group {
+  width: 15rem;
+  margin-bottom: 0.5rem;
+}
+
+.top-nav {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  color: #f86b0c;
+  font-size: 3rem;
+  padding-top: 1rem;
+  font-family: helvetica, sans-serif;
+  font-weight: bolder;
+}
+
+html,
+body {
+  height: 100%;
+  background: url("https://images.unsplash.com/photo-1560243367-b5608ac0d63e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  width: 100px;
+  height: 100px;
+}
+
+.card-text-top {
+  margin-bottom: 0;
+}
+
+.card-text-bottom {
+  margin-bottom: 1rem;
+}
+
+.card {
+  width: 25rem;
+}
+
+.card-img-top {
+  max-width: 25rem;
+  max-height: 25rem;
+}
+
+.loader {
+  border: 20px solid #460808;
+  border-radius: 70%;
+  border-top: 16px solid #e229f3;
+  width: 50px;
+  height: 75px;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.display-error {
+  margin: 1rem;
+  color: red;
+  font-size: 1.5rem;
+}
+
+#search-bar {
+  padding-top: 5rem;
+}
+/*# sourceMappingURL=main.css.map */

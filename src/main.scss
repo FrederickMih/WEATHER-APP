@@ -41,8 +41,8 @@ body {
 }
 
 .main {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -63,12 +63,12 @@ body {
 }
 
 .card {
-  width: 20rem;
+  width: 25rem;
 }
 
 .card-img-top {
-  max-width: 20rem;
-  max-height: 20rem;
+  max-width: 25rem;
+  max-height: 25rem;
 }
 
 .loader {
