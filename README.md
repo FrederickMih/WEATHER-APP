@@ -2,7 +2,7 @@
 
 > This is a web app where you can see the weather of the city of your choice by typing its name on a search bar
 
-![screenshot](./src/assets/weatherscr1.png)
+![screenshot](./src/assets/acra.png)
 ## Built With 
 
 
