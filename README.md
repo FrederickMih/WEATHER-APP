@@ -1,6 +1,6 @@
 ## Weather App
 
-> This is a web app where you can see the weather of the city of your choice by typing its name on a search bar
+>This is a weather app that pulls from the OpenWeatherMap API to allow users to search for and view the forecast in cities worldwide
 
 ![screenshot](./src/assets/sc.png)
 ## Built With 
